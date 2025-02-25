@@ -2,7 +2,7 @@
 
 
 # imports f1 (dispalyGameIntro) and the global variable sUserName
-from f1 import displayGameIntro
+from displayGameIntro import displayGameIntro
 
 
 # calls displayGameIntro (Function 1) to display game into and return sUserName
