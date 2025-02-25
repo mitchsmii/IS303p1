@@ -1,8 +1,17 @@
+#Carson Hendrix 2/25/2025
+
+#This code will make the menu and then allow
+#the user to choose which menu choice they want
+#then return the choice that they choice for the menu
+
+
 def Menu():
     count = 1
 
     # Makes sure that the value entered is in range of the menu
     while count != 0:
+
+        # Make sure that the user enters a number
         try:
         
             # Prints menu
@@ -16,6 +25,7 @@ def Menu():
                 
         Which option would you like to choose? """))
         
+            # end the loop if user input is within 1-5
             if sMenuChoice in range(1, 6):
                 count = 0
 
@@ -25,8 +35,3 @@ def Menu():
     return sMenuChoice
 
 Menu()
-#quit
-#play again
-#choose your team
-#choose opponent team
-#show rules again 
