@@ -20,7 +20,7 @@ Everyone works on a Main function that calls other functions. Create the followi
 NOTE: If there are more team members than functions that need to be created then the main function can be created by one individual. -->
 
 F1 - Justin Maxwell
-F2 - 
+F2 - Carson
 F3 - 
 F4 - Will Knudson
-F5 - 
+F5 - Mitch Smith 
