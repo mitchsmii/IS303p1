@@ -33,5 +33,3 @@ def Menu():
             print("Please choose a valid menu option")
     
     return sMenuChoice
-
-Menu()

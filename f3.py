@@ -5,11 +5,10 @@
 # parameter but give it a default value if none is passed. You can use this 
 # function for both choosing the home team and the opponent team.
 
-from main import *
 from f2 import Menu
 from displayGameIntro import displayGameIntro
 
-def fullGame():
+def fullGame(sMenuChoice):
     
     count = 1
     while count != 0:
@@ -18,13 +17,12 @@ def fullGame():
         elif sMenuChoice == 2:
             print("Choose opponent team")
         elif sMenuChoice == 3:
-            print("Show rules again")
+            #show rules again
             displayGameIntro()
-            Menu()
+            sMenuChoice = Menu()
         elif sMenuChoice == 4:
             print("Play again")
         elif sMenuChoice == 5:
             print("quit")
             count = 0
         
-fullGame()

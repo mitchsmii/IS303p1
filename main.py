@@ -14,4 +14,4 @@ print(sUserName)
 sMenuChoice = int(Menu())
 print(sMenuChoice)
 
-fullGame()
+fullGame(sMenuChoice)
