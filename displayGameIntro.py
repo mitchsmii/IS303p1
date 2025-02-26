@@ -7,6 +7,7 @@
 
 # imports textwrap to remove the indent from the paragraph
 import textwrap
+import time
 
 # Function 1: Displays game intro, prompts user for name, displays welcome message
 def displayGameIntro() :
@@ -32,7 +33,7 @@ def displayGameIntro() :
     while bContinue :
         sUserInput = input("Please enter your name: ")
         if sUserInput.strip() == "" :
-            print("\nInput cannot be empty. Please enter your name:\n")
+            print("\nInput cannot be empty. Please enter your name.\n")
             continue
         try : 
             sUserName = sUserInput
@@ -42,5 +43,5 @@ def displayGameIntro() :
 
 
     # display a welcome message with the sUserName
-    print(f"\nWelcome to the game {sUserName}. Let's get started, shall we?\n")
+    print(f"\nWelcome to the game {sUserName}. Let's get started, shall we?")
     return sUserName

@@ -26,7 +26,21 @@ def fullGame(sMenuChoice):
         if sMenuChoice == 1:
 
         # Choose home team
-            iHomeTeam = int(input(f"Choose your team:\n 1. {BYU}\n 2. {UVU}\n 3. {SUU}\n 4. {utahState}\n 5. {universityOfUtah}\n Who do you want your home team to be? "))
+            secondCount = 1
+            while secondCount != 0 :
+                try :
+                    iHomeTeam = int(input(f"Choose your team:\n 1. {BYU}\n 2. {UVU}\n 3. {SUU}\n 4. {utahState}\n 5. {universityOfUtah}\n Who do you want your home team to be? (Enter a number 1-5) "))
+
+                    if iHomeTeam in range(1, 6) :
+                        secondCount = 0
+                    else :
+                        print("Please enter a number between 1-5.\n")
+
+                except ValueError :
+                    print("\nPlease choose a number between 1-5.\n")
+
+
+            # iHomeTeam = int(input(f"Choose your team:\n 1. {BYU}\n 2. {UVU}\n 3. {SUU}\n 4. {utahState}\n 5. {universityOfUtah}\n Who do you want your home team to be? (Enter a number 1-5) "))
             teamList.pop(iHomeTeam - 1)
             sMenuChoice = Menu()
 
@@ -38,7 +52,7 @@ def fullGame(sMenuChoice):
             for i in range(1, 5):
                 print(f"{count + 1}. {teamList[count]}\t")
                 count += 1
-            iOppTeam = input("Who do you want your opponents team to be? ")
+            iOppTeam = input("Who do you want your opponents team to be? (Enter a number 1-4)")
 
             # THEY CAN ONLY LEAVE THE LOOP IF THEY QUIT OR CHOOSE THEIR TEAM AND OPP TEAM
             return iHomeTeam
