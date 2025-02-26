@@ -21,8 +21,8 @@ def Menu():
             2. Choose opponent team
             3. Show rules again
             4. Play again
-            5. Quit         
-                
+            5. Quit  
+            
         Which option would you like to choose? """))
         
             # end the loop if user input is within 1-5

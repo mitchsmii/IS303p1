@@ -15,3 +15,4 @@ sMenuChoice = int(Menu())
 print(sMenuChoice)
 
 fullGame(sMenuChoice)
+print()
