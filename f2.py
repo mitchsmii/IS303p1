@@ -22,8 +22,7 @@ def Menu():
             1. Choose your team
             2. Choose opponent team
             3. Show rules again
-            4. Play again
-            5. Quit  
+            4. Quit 
             """)
 
             print(sMenuText)            
@@ -34,6 +33,6 @@ def Menu():
                 count = 0
 
         except ValueError:
-            print("\nPlease choose a valid menu option")
+            print("\nPlease choose a valid menu option.")
     
     return sMenuChoice

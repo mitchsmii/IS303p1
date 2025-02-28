@@ -7,15 +7,14 @@ def simulate_game():
     hScore = random.randint(0, 9)
     aScore = random.randint(0, 9)
     
-    while hScore == aScore:
-        hScore = random.randint(0, 9)
-        aScore = random.randint(0, 9)
+    for iCount in range(random.randint(0, 9)) :
+        while hScore == aScore:
+            hScore = random.randint(0, 9)
+            aScore = random.randint(0, 9)
+        
+        if hScore > aScore:
+            wins += 1
+        else:
+            losses += 1
     
-    if hScore > aScore:
-        gameResult = "W"
-        wins += 1
-    else:
-        gameResult = "L"
-        losses += 1
-    
-    return gameResult, wins, losses
+    return wins, losses

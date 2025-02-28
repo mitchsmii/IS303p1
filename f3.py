@@ -38,22 +38,22 @@ def fullGame(sMenuChoice):
 
                 except ValueError :
                     print("\nPlease choose a number between 1-5.\n")
-
-            teamList.pop(iHomeTeam - 1)
+            sHomeTeam = teamList[iHomeTeam - 1]
             sMenuChoice = Menu()
 
         elif sMenuChoice == 2:
 
         # Choose opponents team
-            print("Choose opponent team:")
+            print("Choose opponent team: ")
+            teamList.pop(iHomeTeam - 1)
             count = 0
             for i in range(1, 5):
                 print(f"{count + 1}. {teamList[count]}\t")
                 count += 1
-            iOppTeam = input("Who do you want your opponents team to be? (Enter a number 1-4)")
+            iOppTeam = input("Who do you want your opponents team to be? (Enter a number 1-4) ")
 
             # THEY CAN ONLY LEAVE THE LOOP IF THEY QUIT OR CHOOSE THEIR TEAM AND OPP TEAM
-            return iHomeTeam, iOppTeam
+            return sHomeTeam, iOppTeam
         
         elif sMenuChoice == 3:
 
@@ -63,10 +63,5 @@ def fullGame(sMenuChoice):
 
         #im pretty sure that this part doesnt quite work right
         elif sMenuChoice == 4:
-            print("Play again")
-            fullGame()
-
-        #quit the loop
-        elif sMenuChoice == 5:
-            print("quit")
             count = 0
+            return 
