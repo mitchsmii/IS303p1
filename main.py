@@ -29,11 +29,20 @@ while playAgain == True :
 
         print(f'\n{sHomeTeam} vs. {sAwayTeam}: \nWins: {iWins} Losses: {iLosses}') 
 
-        userInput = input("Do you want to play again? (y/n) \n")
-        if userInput == "y" :
-            playAgain = True
-        else :
-            playAgain = False
+        # initialized exception handling to only allow y or n to be inputted. 
+        bContinue = True
 
-print("Goodbye!")
+        while bContinue:
+            userInput = input("Do you want to play again? (y/n) ").strip().lower()
+            
+            if userInput == "y":
+                playAgain = True
+                bContinue = False  # Exit loop
+            elif userInput == "n":
+                playAgain = False
+                bContinue = False  # Exit loop
+            else:
+                print("\nInvalid input. Please enter 'y' or 'n'.\n")
+
+print("\nGoodbye!")
     
