@@ -1,5 +1,5 @@
 # [Creator name]
-# Edited by Joseph Xiong
+# Edited by Joseph Xiong, Carson Hendrix
 
 # 3. Display list of all teams and allow the user to choose a team using a menu. 
 # Call the function again to let the user choose the opponent but do not display 

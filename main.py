@@ -29,11 +29,17 @@ while playAgain == True :
 
         print(f'\n{sHomeTeam} vs. {sAwayTeam}: \nWins: {iWins} Losses: {iLosses}') 
 
-        userInput = input("Do you want to play again? (y/n) \n")
-        if userInput == "y" :
-            playAgain = True
-        else :
-            playAgain = False
+        count = 0
+        while count != 1:
+            userInput = input("Do you want to play again? (y/n) \n")
+            if userInput == "y" :
+                playAgain = True
+                count = 1
+            elif userInput == "n":
+                playAgain = False
+                count = 1
+            else:
+                print("Please enter a valid input.")
 
 print("Goodbye!")
     
