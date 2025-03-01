@@ -4,15 +4,15 @@ def simulate_game():
     wins = 0
     losses = 0
     
-    hScore = random.randint(0, 9)
-    aScore = random.randint(0, 9)
+    iHomeScore = random.randint(0, 9)
+    iAwayScore = random.randint(0, 9)
     
-    for iCount in range(random.randint(0, 9)) :
-        while hScore == aScore:
-            hScore = random.randint(0, 9)
-            aScore = random.randint(0, 9)
+    for iCount in range(random.randint(1, 11)) :
+        while iHomeScore == iAwayScore:
+            iHomeScore = random.randint(0, 11)
+            iAwayScore = random.randint(0, 11)
         
-        if hScore > aScore:
+        if iHomeScore > iAwayScore:
             wins += 1
         else:
             losses += 1

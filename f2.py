@@ -1,4 +1,5 @@
 #Carson Hendrix 2/25/2025
+#Edited by Joseph Xiong
 
 #This code will make the menu and then allow
 #the user to choose which menu choice they want
@@ -8,10 +9,10 @@
 import textwrap
 
 def Menu():
-    count = 1
+    menuQuit = False
 
     # Makes sure that the value entered is in range of the menu
-    while count != 0:
+    while menuQuit == False:
 
         # Make sure that the user enters a number
         try:
@@ -26,11 +27,13 @@ def Menu():
             """)
 
             print(sMenuText)            
-            sMenuChoice = int(input("Which option would you like to choose? (enter number 1-5) "))
+            sMenuChoice = int(input("Which option would you like to choose? (enter number 1-4) "))
         
-            # end the loop if user input is within 1-5
-            if sMenuChoice in range(1, 6):
-                count = 0
+            # end the loop if user input is within 1-4
+            if sMenuChoice in range(1, 5):
+                menuQuit = True
+            else: 
+                print('Please enter a valid menu option.')
 
         except ValueError:
             print("\nPlease choose a valid menu option.")

@@ -21,6 +21,6 @@ NOTE: If there are more team members than functions that need to be created then
 
 F1 - Justin Maxwell
 F2 - Carson
-F3 - 
+F3 - Joseph Xiong
 F4 - Will Knudson
 F5 - Mitch Smith 

@@ -11,12 +11,12 @@ from f4 import simulate_game
 playAgain = True
 
 while playAgain == True :
-    # calls displayGameIntro (Function 1) to display game into and return sUserName
+    # calls displayGameIntro (Function 1) to display game info and return sUserName
     sUserName = displayGameIntro()
 
     # show menu and show what option user chose
     sMenuChoice = int(Menu())
-    print(sMenuChoice)
+    print(f'\nYou selected option {sMenuChoice}.')
 
     if sMenuChoice == 4 :
         playAgain = False
@@ -27,13 +27,13 @@ while playAgain == True :
 
         iWins, iLosses = simulate_game()
 
-        print(f'\n{sHomeTeam}: Wins: {iWins} Losses: {iLosses}') 
+        print(f'\n{sHomeTeam} vs. {sAwayTeam}: \nWins: {iWins} Losses: {iLosses}') 
 
-        userInput = input("Do you want to play again? (y/n) ")
+        userInput = input("Do you want to play again? (y/n) \n")
         if userInput == "y" :
             playAgain = True
         else :
             playAgain = False
 
-print("Ok Goodbye!")
+print("Goodbye!")
     

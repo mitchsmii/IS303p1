@@ -10,7 +10,7 @@ import textwrap
 import time
 
 # Function 1: Displays game intro, prompts user for name, displays welcome message
-def displayGameIntro() :
+def displayGameIntro():
 
     # Game intro text with textwrap.dedent to remove the indent (because it's in the function, it has an indent for some reason)
     sIntroParagraph = textwrap.dedent("""
@@ -28,18 +28,17 @@ def displayGameIntro() :
 
 
     # prompts the user for their name and stores it in the sUserName variable
-    # input cannont be empty
+    # input cannot be empty
     bContinue = True
-    while bContinue :
+    while bContinue:
         sUserInput = input("Please enter your name: ")
-        if sUserInput.strip() == "" :
+        if sUserInput.strip() == "":
             print("\nInput cannot be empty. Please enter your name.\n")
             continue
-        try : 
+        else: 
             sUserName = sUserInput
             bContinue = False
-        finally :
-            bContinue = False
+
 
 
     # display a welcome message with the sUserName
