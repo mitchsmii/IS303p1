@@ -1,6 +1,7 @@
 # IS303p1 - Professor Anderson
 # Justin Maxwell - Carson Hendrix - Cohen Scott
 # Joseph Xiong - Mitchel Smith - Will Knudson
+# We have learned that we need to plan, map out, and communicate better so that in the future we can be more efficient and capable.
 
 <!-- 
 As a group and using Git/Github, write a program that plays the women’s soccer season as defined in Assignment 4. Modify the code to use functions as defined below. You can do more than what is required.
